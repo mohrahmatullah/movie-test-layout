@@ -3,7 +3,7 @@
   <div class="container">
     <div class="flex-parent-ft">
       <div class="flex-child-ft item1">
-         <a href="index-2.html"><img class="logo" src="<?php echo base_url('assets/images/logo1.png'); ?>" alt=""></a>
+         <a href="<?php echo base_url('welcome/index'); ?>"><img class="logo" src="<?php echo base_url('assets/images/logo1.png'); ?>" alt=""></a>
          <p>Movie<br>
         Jakarta Barat</p>
         <p>Call us: <a href="#">+62838-7865-4003</a></p>

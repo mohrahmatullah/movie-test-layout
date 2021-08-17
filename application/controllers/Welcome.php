@@ -29,8 +29,24 @@ class Welcome extends CI_Controller {
 	{
 		$data['database'] = $this->home->get_all_data();
 		$this->load->view('home/index', $data);
+	}
 
-		// $data['database'] = $this->home->get_details_data();
-		// $this->load->view('home/index', $data);
+	public function detail( $id ){
+		$data = $this->home->get_all_data();
+		$data['database'] = $this->searchForId($id, $data);
+  		// echo "<pre>";
+  		// print_r($data['database']);
+  		// echo "<pre>";
+  		// exit();
+  		$this->load->view('home/details', $data);
+	}
+
+	public function searchForId($id, $array) {
+	   foreach ($array as $key => $val) {
+	       if ($val->id === $id) {
+	           return $val;
+	       }
+	   }
+	   return null;
 	}
 }

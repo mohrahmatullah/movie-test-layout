@@ -13,7 +13,7 @@
       <div class="slick-multiItemSlider">
         <?php foreach($database as $key => $value) : ?> 
           <?php if($key < 10){ ?>
-          <div class="movie-item" data-toggle="modal" data-target="#exampleModal<?php echo $value->id; ?>">
+          <div class="movie-item" onclick="location.href='<?php echo base_url('welcome/detail/'.$value->id); ?>';">
               <div class="mv-img">
                 <a><img src="<?php echo $value->image; ?>" alt="" width="285" height="437"></a>
               </div>
@@ -21,7 +21,7 @@
                 <div class="cate">
                   <span class="blue"><a href="#"><?php echo $value->year; ?></a></span>
                 </div>
-                <h6><a><?php echo $value->title; ?></a></h6>
+                <h6><a href="<?php echo base_url('welcome/detail/'.$value->id); ?>"><?php echo $value->title; ?></a></h6>
               </div>
           </div>
           <?php } ?>
@@ -44,7 +44,7 @@
             <?php foreach($database as $key => $value) : ?> 
               <?php if($key > 9 && $key < 20){ ?>
                 <?php if($value->rank % 2 == 0){ ?>
-                  <div class="item" data-toggle="modal" data-target="#exampleModal<?php echo $value->id; ?>">
+                  <div class="item" onclick="location.href='<?php echo base_url('welcome/detail/'.$value->id); ?>';">
                     <div class="trailer-infor" style="width: 75%;">
                       <h4 class="desc"><?php echo $value->title; ?></h4>
                       <p><?php echo $value->year; ?></p>
@@ -54,7 +54,7 @@
                     </div>
                   </div>
                 <?php }else{ ?>
-                  <div class="item" data-toggle="modal" data-target="#exampleModal<?php echo $value->id; ?>">
+                  <div class="item" onclick="location.href='<?php echo base_url('welcome/detail/'.$value->id); ?>';">
                     <div class="trailer-img">
                       <img src="<?php echo $value->image; ?>"  alt="photo by Barn Images" width="4096" height="2737">
                     </div>

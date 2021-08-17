@@ -43,15 +43,27 @@
           <div class="slider-nav-2 thumb-ft"> 
             <?php foreach($database as $key => $value) : ?> 
               <?php if($key > 9 && $key < 20){ ?>
-                <div class="item" data-toggle="modal" data-target="#exampleModal<?php echo $value->id; ?>">
-                  <div class="trailer-img">
-                    <img src="<?php echo $value->image; ?>"  alt="photo by Barn Images" width="4096" height="2737">
+                <?php if($value->rank % 2 == 0){ ?>
+                  <div class="item" data-toggle="modal" data-target="#exampleModal<?php echo $value->id; ?>">
+                    <div class="trailer-infor" style="width: 100%;">
+                      <h4 class="desc"><?php echo $value->title; ?></h4>
+                      <p><?php echo $value->year; ?></p>
+                    </div>
+                    <div class="trailer-img">
+                      <img src="<?php echo $value->image; ?>"  alt="photo by Barn Images" width="4096" height="2737">
+                    </div>
                   </div>
-                  <div class="trailer-infor">
-                    <h4 class="desc"><?php echo $value->title; ?></h4>
-                    <p><?php echo $value->year; ?></p>
+                <?php }else{ ?>
+                  <div class="item" data-toggle="modal" data-target="#exampleModal<?php echo $value->id; ?>">
+                    <div class="trailer-img">
+                      <img src="<?php echo $value->image; ?>"  alt="photo by Barn Images" width="4096" height="2737">
+                    </div>
+                    <div class="trailer-infor">
+                      <h4 class="desc"><?php echo $value->title; ?></h4>
+                      <p><?php echo $value->year; ?></p>
+                    </div>
                   </div>
-                </div>
+                <?php } ?>                
               <?php } ?>
             <?php endforeach; ?>
           </div>

@@ -45,7 +45,7 @@
               <?php if($key > 9 && $key < 20){ ?>
                 <?php if($value->rank % 2 == 0){ ?>
                   <div class="item" data-toggle="modal" data-target="#exampleModal<?php echo $value->id; ?>">
-                    <div class="trailer-infor" style="width: 100%;">
+                    <div class="trailer-infor" style="width: 75%;">
                       <h4 class="desc"><?php echo $value->title; ?></h4>
                       <p><?php echo $value->year; ?></p>
                     </div>

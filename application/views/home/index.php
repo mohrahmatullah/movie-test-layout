@@ -56,7 +56,7 @@
                                               <div><span>Crew : <?php echo $value->crew; ?></span></div>
                                           </div>
                                           <div class="d-flex justify-content-around align-items-center align-content-center border-top">
-                                              <div class="border-right px-2 text-center py-2"><span class="d-block font-weight-bold">Rank</span><span><?php echo $value->rank; ?></span></div>
+                                              <div class="border-right px-2 text-center py-2"><span class="d-block font-weight-bold">Rank : </span><span><?php echo $value->rank; ?></span></div>
                                           </div>
                                       </div>
                                   </div>
@@ -132,7 +132,7 @@
                                                   <div><span>Crew : <?php echo $value->crew; ?></span></div>
                                               </div>
                                               <div class="d-flex justify-content-around align-items-center align-content-center border-top">
-                                                  <div class="border-right px-2 text-center py-2"><span class="d-block font-weight-bold">Rank</span><span><?php echo $value->rank; ?></span></div>
+                                                  <div class="border-right px-2 text-center py-2"><span class="d-block font-weight-bold">Rank : </span><span><?php echo $value->rank; ?></span></div>
                                               </div>
                                           </div>
                                       </div>

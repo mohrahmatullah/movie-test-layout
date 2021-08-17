@@ -362,15 +362,15 @@ $(function(){
 	});
 	slidenav2.slick({
 		slidesToShow: 3,
-		slidesToScroll: 1,
+		slidesToScroll: 4,
 		asNavFor: '.slider-for-2',
 		dots: false,
 		arrows: true,
 		// centerMode: true,
 		focusOnSelect: true,
 		vertical: true,
-		// autoplay: true,
-		// autoplaySpeed: 2000
+		autoplay: true,
+		autoplaySpeed: 2000
 	});
 	//== js for video lightbox
 	var fancyboxmedia = $('.fancybox-media');

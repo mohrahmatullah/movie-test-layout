@@ -361,16 +361,24 @@ $(function(){
 		asNavFor: '.slider-nav-2',
 	});
 	slidenav2.slick({
-		slidesToShow: 3,
-		slidesToScroll: 4,
-		asNavFor: '.slider-for-2',
-		dots: false,
-		arrows: true,
-		// centerMode: true,
-		focusOnSelect: true,
-		vertical: true,
-		autoplay: true,
-		autoplaySpeed: 2000
+		// slidesToShow: 3,
+		// slidesToScroll: 1,
+		// asNavFor: '.slider-for-2',
+		// dots: false,
+		// arrows: true,
+		// // centerMode: true,
+		// focusOnSelect: true,
+		// vertical: true,
+		// autoplay: true,
+		// autoplaySpeed: 2000
+		autoplay: false,
+	    dots: false,
+	    vertical: true,
+	    verticalSwiping: true,
+	    slidesToShow: 3,
+	    slidesToScroll: 1,
+	    centerMode: true,
+	    centerPadding: "50%"
 	});
 	//== js for video lightbox
 	var fancyboxmedia = $('.fancybox-media');

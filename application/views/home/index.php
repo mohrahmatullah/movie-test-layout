@@ -36,7 +36,7 @@
     <div class="row ipad-width">
       <div class="col-md-12">
         <div class="title-hd">
-          <h2>in theater</h2>
+          <h2>Movie</h2>
           <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
         </div>
         <div class="videos">

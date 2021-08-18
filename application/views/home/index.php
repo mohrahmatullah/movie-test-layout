@@ -44,7 +44,7 @@
             <?php foreach($database as $key => $value) : ?> 
               <?php if($key > 9 && $key < 20){ ?>
                 <?php if($value->rank % 2 == 0){ ?>
-                  <div class="item" onclick="location.href='<?php echo base_url('welcome/detail/'.$value->id); ?>';">
+                  <div style="box-shadow: 0px 2px 2px aliceblue;" class="item" onclick="location.href='<?php echo base_url('welcome/detail/'.$value->id); ?>';">
                     <div class="trailer-infor" style="width: 75%;">
                       <h4 class="desc"><?php echo $value->title; ?></h4>
                       <p><?php echo $value->year; ?></p>
@@ -54,11 +54,11 @@
                     </div>
                   </div>
                 <?php }else{ ?>
-                  <div class="item" onclick="location.href='<?php echo base_url('welcome/detail/'.$value->id); ?>';">
+                  <div style="box-shadow: 0px 2px 2px aliceblue;" class="item" onclick="location.href='<?php echo base_url('welcome/detail/'.$value->id); ?>';">
                     <div class="trailer-img">
                       <img src="<?php echo $value->image; ?>"  alt="photo by Barn Images" width="4096" height="2737">
                     </div>
-                    <div class="trailer-infor">
+                    <div class="trailer-infor text-right" style="width: 100%;">
                       <h4 class="desc"><?php echo $value->title; ?></h4>
                       <p><?php echo $value->year; ?></p>
                     </div>

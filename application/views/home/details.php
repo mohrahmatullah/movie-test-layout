@@ -37,7 +37,7 @@
 						<div class="rate">
 							<i class="ion-android-star"></i>
 							<p>
-								<span>Rating : <?php echo $database->imDbRating; ?></span> / Rank : 1
+								<span>Rating : <?php echo $database->imDbRating; ?></span> / Rank : <?php echo $database->rank; ?>
 							</p>
 						</div>
 					</div>
